@@ -21,3 +21,10 @@ const frames = [
 function scoreFrame(frames) {
   return frame[0] + frame[1]
 }
+
+function scoreGame(frames) {
+  let total = 0
+  for(let i = 0; i < frames.length; i++) {
+    
+  }
+}
