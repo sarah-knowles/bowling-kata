@@ -18,13 +18,35 @@ const frames = [
 //  [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 10, 10],
 // ]
 
-function scoreFrame(frames) {
-  return frame[0] + frame[1]
+function scoreFrame(frame, nextFrame) {
+  let frameScore = 0
+  if (frame[0] + frame[1] == 10 && frame[0] != 10) {
+    frameScore = frame[0] + frame[1] + nextFrame[0]
+  } else {
+  frameScore = frame[0] + frame[1]
+  } 
+  return frameScore
 }
 
 function scoreGame(frames) {
   let total = 0
-  for(let i = 0; i < frames.length; i++) {
-    
+    frames.forEach((frame, i) => {
+      const nextFrame = frames[i + 1]
+      let frameScore = scoreFrame(frame, nextFrame)
+      total = total + frameScore
+    })
+  return total
+}
+
+
+function scoreSpare(frame, nextFrame) {
+  let score = frame[0] + frame[1];
+  if (score == 10 && frame[0] != 10) {
+    return score + nextFrame[0]
   }
+}
+
+function scoreStrike(frame, nextFrame) {
+  const nextFrame = frames[i + 1]
+    if ()
 }

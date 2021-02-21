@@ -1,0 +1,19 @@
+{
+  "name": "bowling-kata",
+  "version": "1.0.0",
+  "description": "In this challenge you're going to score a bowling game. Sound simple? Just wait...",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarah-knowles/bowling-kata.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarah-knowles/bowling-kata/issues"
+  },
+  "homepage": "https://github.com/sarah-knowles/bowling-kata#readme"
+}
